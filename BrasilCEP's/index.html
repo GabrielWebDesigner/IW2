@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/map.png" type="image/x-icon">
+    <title>Brasil - CEP's</title>
+    <script src="./JS/Forms_CEP.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_tourist_map_re_293e.svg" alt="">
+        </div>
+        <div class="form">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Localizar CEP</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="cep">Coloque o CEP</label>
+                        <input id="cep" type="text" name="cep" placeholder="Digite o CEP ..." required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="endereco">Endereço</label>
+                        <input id="endereco" type="text" name="endereco" placeholder="Endereço correspondente">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cidade">Cidade</label>
+                        <input id="cidade" type="text" name="cidade" placeholder="Cidade correspondente" >
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="complemento">Complemento</label>
+                        <input id="complemento" type="text" name="complemento" placeholder="Complemento">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="bairro">Bairro</label>
+                        <input id="bairro" type="text" name="bairro" placeholder="Bairro correspondente">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="estado">Estado</label>
+                        <select id="estado" name="estado">
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="numero">Número</label>
+                        <input id="number" type="text" name="numero" placeholder="Número">
+                    </div>
+        </div>
+        <div class="continue-button">
+            <button type="button" id="button-addon1">Buscar</button>
+        </div>
+        <div id="json"></div>
+    </div>
+</body>
+
+</html>
